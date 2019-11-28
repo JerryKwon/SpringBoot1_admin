@@ -49,6 +49,8 @@ public class GetController {
 		
 		// {"account":"", "email":"", "page":0}
 		
+	// 추가: Mapping 하는 주소가 동일한 경우에 Spring Boot는 어떤 것을 매핑해야 할 지 몰라서 에러를 던짐.	
+	// 그러나 Class가 겹치는 것 RequestMapping("")이 동일한 경우는 Error X
 		return searchParam;
 	}
 	
